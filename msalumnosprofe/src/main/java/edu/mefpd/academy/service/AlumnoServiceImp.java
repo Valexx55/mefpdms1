@@ -2,14 +2,27 @@ package edu.mefpd.academy.service;
 
 import java.util.Optional;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import edu.mefpd.academy.model.Alumno;
 import edu.mefpd.academy.repository.AlumnoRepository;
 
-@Service
+
+
 public class AlumnoServiceImp implements AlumnoService {
 	
+	/*
+	 * lo que hace Spring al arrancar
+	 * 
+	 * 1) alumnoserviceImp = new AlumnoServiceImp //Inversión de Control
+	 * 2) alumnoRepository = new AlumnoRepository //IOC
+	 * 3) Composición "inyección"
+	 * 	alumnoserviceImp.alumnoRepository = alumnoRepository
+	 * */
+	
+	
+	@Autowired//dame un alumnno repository
 	AlumnoRepository alumnoRepository;//trabajo con la bd a partir de este objecto
 	
 
