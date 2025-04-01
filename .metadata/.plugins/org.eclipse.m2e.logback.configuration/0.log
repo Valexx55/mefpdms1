@@ -1235,3 +1235,21 @@
 2025-04-01 12:00:55,484 [Worker-55: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
 2025-04-01 12:00:55,518 [Worker-55: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
 2025-04-01 12:00:55,541 [Worker-55: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/usuario/Documents/workspace-spring-tool-suite-4-4.16.1.RELEASE/msalumnosprofe/src/test/resources
+2025-04-01 12:11:44,557 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2025-04-01 12:11:44,609 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src/main/resources to target/classes
+2025-04-01 12:11:44,628 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/usuario/Documents/workspace-spring-tool-suite-4-4.16.1.RELEASE/msalumnosprofe/src/test/resources
+2025-04-01 12:19:27,286 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2025-04-01 12:19:27,347 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src/main/resources to target/classes
+2025-04-01 12:19:27,378 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/usuario/Documents/workspace-spring-tool-suite-4-4.16.1.RELEASE/msalumnosprofe/src/test/resources
+2025-04-01 12:21:29,666 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2025-04-01 12:21:29,717 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src/main/resources to target/classes
+2025-04-01 12:21:29,772 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/usuario/Documents/workspace-spring-tool-suite-4-4.16.1.RELEASE/msalumnosprofe/src/test/resources
+2025-04-01 12:23:51,824 [Worker-70: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2025-04-01 12:23:51,891 [Worker-70: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src/main/resources to target/classes
+2025-04-01 12:23:51,937 [Worker-70: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/usuario/Documents/workspace-spring-tool-suite-4-4.16.1.RELEASE/msalumnosprofe/src/test/resources
+2025-04-01 12:28:17,530 [Worker-71: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2025-04-01 12:28:17,570 [Worker-71: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src/main/resources to target/classes
+2025-04-01 12:28:17,623 [Worker-71: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/usuario/Documents/workspace-spring-tool-suite-4-4.16.1.RELEASE/msalumnosprofe/src/test/resources
+2025-04-01 12:33:03,414 [Worker-77: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2025-04-01 12:33:03,436 [Worker-77: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src/main/resources to target/classes
+2025-04-01 12:33:03,451 [Worker-77: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/usuario/Documents/workspace-spring-tool-suite-4-4.16.1.RELEASE/msalumnosprofe/src/test/resources

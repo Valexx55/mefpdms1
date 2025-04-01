@@ -51,6 +51,13 @@ public class AlumnosController {
 			a =  new Alumno("Juan", 28);////ESTADO TRANSIENT
 		 	log.info("ALUMNO log info = " +a);//TODO configurar el log
 		 	log.debug("ALUMNO log debug  = " +a);//TODO configurar el log
+		 	
+		 	//IndexOutBoundsException
+		 	char i = a.getNombre().charAt(4);
+		 	
+		 	//provocamos una null pointer exception
+		 	Alumno b = null;
+		 	b.getApellido();
 		 
 		 return a;
 	 }
