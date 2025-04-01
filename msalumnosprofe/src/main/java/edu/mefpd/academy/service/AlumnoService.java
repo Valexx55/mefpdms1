@@ -22,4 +22,6 @@ public interface AlumnoService {
 	
 	public Iterable<Alumno> leerTodos ();
 	
+	public Iterable<Alumno> findByEdadBetween (int edadmin, int edadmax);
+	
 }
