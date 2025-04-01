@@ -49,7 +49,8 @@ public class AlumnosController {
 		 Alumno a = null;
 			 
 			a =  new Alumno("Juan", 28);////ESTADO TRANSIENT
-		 	log.info("ALUMNO log = " +a);//TODO configurar el log
+		 	log.info("ALUMNO log info = " +a);//TODO configurar el log
+		 	log.debug("ALUMNO log debug  = " +a);//TODO configurar el log
 		 
 		 return a;
 	 }

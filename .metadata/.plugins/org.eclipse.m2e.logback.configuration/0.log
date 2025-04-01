@@ -1176,3 +1176,62 @@
 2025-04-01 10:46:37,012 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
 2025-04-01 10:46:37,083 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
 2025-04-01 10:46:37,107 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/usuario/Documents/workspace-spring-tool-suite-4-4.16.1.RELEASE/msalumnosprofe/src/test/resources
+2025-04-01 11:37:35,661 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2025-04-01 11:37:35,672 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2025-04-01 11:37:35,695 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/usuario/Documents/workspace-spring-tool-suite-4-4.16.1.RELEASE/msalumnosprofe/src/test/resources
+2025-04-01 11:45:34,150 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2025-04-01 11:45:34,312 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src/main/resources to target/classes
+2025-04-01 11:45:34,340 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/usuario/Documents/workspace-spring-tool-suite-4-4.16.1.RELEASE/msalumnosprofe/src/test/resources
+2025-04-01 11:45:43,028 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2025-04-01 11:45:43,029 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2025-04-01 11:45:43,032 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/usuario/Documents/workspace-spring-tool-suite-4-4.16.1.RELEASE/msalumnosprofe/src/test/resources
+2025-04-01 11:47:17,941 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2025-04-01 11:47:17,942 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2025-04-01 11:47:18,000 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/usuario/Documents/workspace-spring-tool-suite-4-4.16.1.RELEASE/msalumnosprofe/src/test/resources
+2025-04-01 11:47:52,465 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2025-04-01 11:47:52,470 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2025-04-01 11:47:52,477 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/usuario/Documents/workspace-spring-tool-suite-4-4.16.1.RELEASE/msalumnosprofe/src/test/resources
+2025-04-01 11:49:10,321 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2025-04-01 11:49:10,322 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2025-04-01 11:49:10,331 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/usuario/Documents/workspace-spring-tool-suite-4-4.16.1.RELEASE/msalumnosprofe/src/test/resources
+2025-04-01 11:53:16,662 [Worker-48: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: edu.mefpd.academy:msalumnosprofe:0.0.1-SNAPSHOT @ /home/usuario/Documents/workspace-spring-tool-suite-4-4.16.1.RELEASE/msalumnosprofe/pom.xml.
+2025-04-01 11:53:18,980 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2025-04-01 11:53:18,981 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2025-04-01 11:53:19,004 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/usuario/Documents/workspace-spring-tool-suite-4-4.16.1.RELEASE/msalumnosprofe/src/test/resources
+2025-04-01 11:53:20,477 [Worker-54: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-actuator/3.4.4/spring-boot-starter-actuator-3.4.4-sources.jar
+2025-04-01 11:53:20,540 [Worker-54: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-actuator/3.4.4/spring-boot-starter-actuator-3.4.4-sources.jar
+2025-04-01 11:53:20,546 [Worker-54: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-starter-actuator:3.4.4
+2025-04-01 11:53:20,656 [Worker-54: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-actuator-autoconfigure/3.4.4/spring-boot-actuator-autoconfigure-3.4.4-sources.jar
+2025-04-01 11:53:21,024 [Worker-54: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-actuator-autoconfigure/3.4.4/spring-boot-actuator-autoconfigure-3.4.4-sources.jar
+2025-04-01 11:53:21,026 [Worker-54: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-actuator-autoconfigure:3.4.4
+2025-04-01 11:53:21,156 [Worker-54: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-actuator/3.4.4/spring-boot-actuator-3.4.4-sources.jar
+2025-04-01 11:53:21,449 [Worker-54: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-actuator/3.4.4/spring-boot-actuator-3.4.4-sources.jar
+2025-04-01 11:53:21,461 [Worker-54: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-actuator:3.4.4
+2025-04-01 11:53:21,722 [Worker-54: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/micrometer/micrometer-jakarta9/1.14.5/micrometer-jakarta9-1.14.5-sources.jar
+2025-04-01 11:53:21,744 [Worker-54: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/micrometer/micrometer-jakarta9/1.14.5/micrometer-jakarta9-1.14.5-sources.jar
+2025-04-01 11:53:21,749 [Worker-54: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for io.micrometer:micrometer-jakarta9:1.14.5
+2025-04-01 11:53:21,946 [Worker-54: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/micrometer/micrometer-core/1.14.5/micrometer-core-1.14.5-sources.jar
+2025-04-01 11:53:22,189 [Worker-54: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/micrometer/micrometer-core/1.14.5/micrometer-core-1.14.5-sources.jar
+2025-04-01 11:53:22,207 [Worker-54: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for io.micrometer:micrometer-core:1.14.5
+2025-04-01 11:53:22,542 [Worker-54: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/hdrhistogram/HdrHistogram/2.2.2/HdrHistogram-2.2.2-sources.jar
+2025-04-01 11:53:22,965 [Worker-54: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/hdrhistogram/HdrHistogram/2.2.2/HdrHistogram-2.2.2-sources.jar
+2025-04-01 11:53:22,966 [Worker-54: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.hdrhistogram:HdrHistogram:2.2.2
+2025-04-01 11:53:23,020 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2025-04-01 11:53:23,162 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src/main/resources to target/classes
+2025-04-01 11:53:23,180 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/usuario/Documents/workspace-spring-tool-suite-4-4.16.1.RELEASE/msalumnosprofe/src/test/resources
+2025-04-01 11:53:23,696 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2025-04-01 11:53:23,697 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2025-04-01 11:53:23,719 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/usuario/Documents/workspace-spring-tool-suite-4-4.16.1.RELEASE/msalumnosprofe/src/test/resources
+2025-04-01 11:53:23,828 [Worker-51: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2025-04-01 11:53:25,485 [Worker-51: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: edu.mefpd.academy:msalumnosprofe:0.0.1-SNAPSHOT @ /home/usuario/Documents/workspace-spring-tool-suite-4-4.16.1.RELEASE/msalumnosprofe/pom.xml.
+2025-04-01 11:53:26,454 [Worker-51: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /msalumnosprofe/src/main/java
+2025-04-01 11:53:26,456 [Worker-51: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /msalumnosprofe/src/main/resources
+2025-04-01 11:53:26,457 [Worker-51: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /msalumnosprofe/src/main/resources
+2025-04-01 11:53:26,459 [Worker-51: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /msalumnosprofe/src/test/java
+2025-04-01 11:53:27,008 [Worker-51: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 3 sec
+2025-04-01 11:53:28,067 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2025-04-01 11:53:28,129 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src/main/resources to target/classes
+2025-04-01 11:53:28,149 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/usuario/Documents/workspace-spring-tool-suite-4-4.16.1.RELEASE/msalumnosprofe/src/test/resources
+2025-04-01 12:00:55,484 [Worker-55: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2025-04-01 12:00:55,518 [Worker-55: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2025-04-01 12:00:55,541 [Worker-55: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/usuario/Documents/workspace-spring-tool-suite-4-4.16.1.RELEASE/msalumnosprofe/src/test/resources
