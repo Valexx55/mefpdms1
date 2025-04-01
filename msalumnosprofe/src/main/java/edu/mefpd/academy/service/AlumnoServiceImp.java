@@ -4,12 +4,13 @@ import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import edu.mefpd.academy.model.Alumno;
 import edu.mefpd.academy.repository.AlumnoRepository;
 
 
-
+@Service
 public class AlumnoServiceImp implements AlumnoService {
 	
 	/*
@@ -48,15 +49,17 @@ public class AlumnoServiceImp implements AlumnoService {
 	}
 
 	@Override
+	@Transactional(readOnly = true)
 	public Optional<Alumno> leerPorId(Long id) {
-		// TODO Auto-generated method stub
-		return Optional.empty();
+		
+		return this.alumnoRepository.findById(id);
 	}
 
 	@Override
+	@Transactional(readOnly = true)
 	public Iterable<Alumno> leerTodos() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return this.alumnoRepository.findAll();
 	}
 
 }

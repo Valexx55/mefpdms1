@@ -10,6 +10,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.PrePersist;
 import jakarta.persistence.Table;
 
+//JAVA BEAN / pojo /DTO
 @Entity
 @Table(name = "alumnos")
 public class Alumno {
@@ -97,6 +98,12 @@ public class Alumno {
 
 	public void setCreadoEn(LocalDateTime creadoEn) {
 		this.creadoEn = creadoEn;
+	}
+
+	@Override
+	public String toString() {
+		return "Alumno [id=" + id + ", nombre=" + nombre + ", edad=" + edad + ", email=" + email + ", apellido="
+				+ apellido + ", creadoEn=" + creadoEn + "]";
 	}
 	
 	
