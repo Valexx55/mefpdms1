@@ -5,10 +5,15 @@ import java.util.Optional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -43,7 +48,7 @@ public class AlumnosController {
 	 {
 		 Alumno a = null;
 			 
-			a =  new Alumno("Juan", 28);
+			a =  new Alumno("Juan", 28);////ESTADO TRANSIENT
 		 	log.info("ALUMNO log = " +a);//TODO configurar el log
 		 
 		 return a;
@@ -87,5 +92,62 @@ public class AlumnosController {
 		 return respuesta;
 	 }
 
+	
+	@PostMapping //POST http://localhost:8081/alumno
+	 public ResponseEntity<Alumno> insertarAlumno (@RequestBody Alumno alumno)
+	 {
+		 ResponseEntity<Alumno> respuesta = null;
+		 Alumno alumnoNuevo = null;
+		 	
+		 	log.info("En insertarAlumno ");
+		 	alumnoNuevo = this.alumnoService.alta(alumno);
+		 	respuesta = ResponseEntity.status(HttpStatus.CREATED).body(alumnoNuevo);
+		 	log.info("Alumno nuevo =  " +alumnoNuevo);
+
+		 
+		 return respuesta;
+	 }
+	
+	
+	
+	@DeleteMapping("/{id}") //POST http://localhost:8081/alumno/8
+	 public ResponseEntity<Void> borrarAlumnoPorId (@PathVariable Long id)
+	 {
+		 ResponseEntity<Void> respuesta = null;
+		 	
+		 	log.info("En borrarAlumnoPorId ");
+		 	this.alumnoService.bajaPorId(id);
+		 	respuesta = ResponseEntity.status(HttpStatus.OK).build();
+
+		 
+		 return respuesta;
+	 }
+	
+	
+	@PutMapping("/{id}") //PUT http://localhost:8081/alumno/1
+	 public ResponseEntity<Alumno> modificarAlumno (@RequestBody Alumno alumno, @PathVariable Long id)
+	 {
+		 ResponseEntity<Alumno> respuesta = null;
+		 Optional<Alumno> oa = Optional.empty();
+		 Alumno alumnoModificado = null;
+		 	
+		 	log.info("En modificarAlumno ");
+		 	oa = this.alumnoService.modificar(alumno, id);
+		 	if (oa.isPresent())
+		 	{
+		 		
+		 		alumnoModificado = oa.get();
+		 		respuesta = ResponseEntity.status(HttpStatus.OK).body(alumnoModificado);
+		 		
+		 		log.info("alumnoModificado  " + alumnoModificado);
+		 	} else {
+		 		respuesta = ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+		 		log.info("Alumno No encotnrado");
+		 	}
+		 	
+
+		 
+		 return respuesta;
+	 }
 
 }

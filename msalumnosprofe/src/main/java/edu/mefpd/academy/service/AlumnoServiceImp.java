@@ -2,6 +2,7 @@ package edu.mefpd.academy.service;
 
 import java.util.Optional;
 
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -28,24 +29,39 @@ public class AlumnoServiceImp implements AlumnoService {
 	
 
 	@Override
+	@Transactional
 	public Alumno alta(Alumno alumno) {
 	//tengo q usar la base de datos
-		this.alumnoRepository.save(alumno);
-		return null;
+		return this.alumnoRepository.save(alumno);
+		
 	}
 
 	@Override
 	public void bajaPorId(Long id) {
-		// TODO Auto-generated method stub
 		this.alumnoRepository.deleteById(id);
-		//tengo q usar la base de datos
+		
 	}
 
 	@Override
+	@Transactional
 	public Optional<Alumno> modificar(Alumno alumno, Long id) {
-		// TODO Auto-generated method stub
-		//tengo q usar la base de datos
-		return Optional.empty();
+		Optional<Alumno> oa = Optional.empty();
+			//1 leer
+			oa = this.alumnoRepository.findById(id);
+			if (oa.isPresent())
+			{
+				//2 modificar los atributos
+				Alumno alumno_leido = oa.get();//ESTADO PERSISTENTE
+				//alumno_leido.setNombre(alumno.getNombre());
+				BeanUtils.copyProperties(alumno, alumno_leido, "id", "creadoEn");
+				//3 escribilo - AUTOMÁTICO 
+				//this.alumnoRepository.save(alumno_leido);
+				oa = Optional.of(alumno_leido);
+				
+			}
+
+		
+		return oa;
 	}
 
 	@Override
