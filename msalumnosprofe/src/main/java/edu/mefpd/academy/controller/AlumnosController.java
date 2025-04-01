@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import edu.mefpd.academy.model.Alumno;
 import edu.mefpd.academy.service.AlumnoService;
+import io.swagger.v3.oas.annotations.Operation;
 
 /**
  * Esta clase, recibe las peticiones HTTP, que permiten
@@ -62,6 +63,7 @@ public class AlumnosController {
 		 return a;
 	 }
 	
+	@Operation(description = "Este método recupera la lista completa de alumnos en el sistema")
 	@GetMapping //GET http://localhost:8081/alumno
 	 public ResponseEntity<Iterable<Alumno>> consultarTodos ()
 	 {
