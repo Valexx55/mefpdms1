@@ -9,6 +9,11 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.PrePersist;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.Size;
 
 //JAVA BEAN / pojo /DTO
 @Entity
@@ -19,10 +24,19 @@ public class Alumno {
 	@GeneratedValue(strategy = GenerationType.IDENTITY) //auto inc en mysql
 	private Long id;
 	
+	@Size(min = 3, max = 20)
 	private String nombre;
+	
+	@Min(10)
+	@Max(100)
 	private int edad;
+	
+	@Email
 	private String email;
+	
+	@NotEmpty//esto debe tener longitudo mayor o igual a 1
 	private String apellido;
+	
 	
 	@Column(name = "creado_en")
 	private LocalDateTime creadoEn;

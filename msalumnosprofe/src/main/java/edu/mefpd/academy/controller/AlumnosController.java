@@ -1,13 +1,17 @@
 package edu.mefpd.academy.controller;
 
+import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.FieldError;
+import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -21,6 +25,7 @@ import org.springframework.web.bind.annotation.RestController;
 import edu.mefpd.academy.model.Alumno;
 import edu.mefpd.academy.service.AlumnoService;
 import io.swagger.v3.oas.annotations.Operation;
+import jakarta.validation.Valid;
 
 /**
  * Esta clase, recibe las peticiones HTTP, que permiten
@@ -105,15 +110,39 @@ public class AlumnosController {
 
 	
 	@PostMapping //POST http://localhost:8081/alumno
-	 public ResponseEntity<Alumno> insertarAlumno (@RequestBody Alumno alumno)
+	 public ResponseEntity<?> insertarAlumno (@Valid @RequestBody Alumno alumno, BindingResult bindingResult)
 	 {
-		 ResponseEntity<Alumno> respuesta = null;
+		 ResponseEntity<?> respuesta = null;
 		 Alumno alumnoNuevo = null;
 		 	
 		 	log.info("En insertarAlumno ");
-		 	alumnoNuevo = this.alumnoService.alta(alumno);
-		 	respuesta = ResponseEntity.status(HttpStatus.CREATED).body(alumnoNuevo);
-		 	log.info("Alumno nuevo =  " +alumnoNuevo);
+		 	if (bindingResult.hasErrors())
+		 	{
+		 		log.info("El Alumno presenta errores ");
+		 		List<ObjectError> listaerrores  = bindingResult.getAllErrors();
+		 		listaerrores.forEach(error -> {
+		 			log.error(error.toString());
+		 		});
+		 		
+		 		/*List<String> listaerrores2  = bindingResult.getFieldErrors().stream().map(error -> error.getField()+ " "+ error.getDefaultMessage())
+		 	              .collect(Collectors.toList());*/
+		 		
+		 		
+		 		
+		 		/*List<FieldError> fieldErrorList = bindingResult.getFieldErrors().stream()
+		 	              .map(error -> error.getField()+ error.getDefaultMessage())
+		 	              .collect(Collectors.toList());
+
+		 	            //UpdateUserResponse updateResponse = new UpdateUserResponse(fieldErrorList);*/
+		 		respuesta = ResponseEntity.status(HttpStatus.BAD_REQUEST).body(listaerrores);
+		 		
+		 	} else {
+		 		log.info("El Alumno es correcto (sin errores)");
+		 		alumnoNuevo = this.alumnoService.alta(alumno);
+			 	respuesta = ResponseEntity.status(HttpStatus.CREATED).body(alumnoNuevo);
+			 	log.info("Alumno nuevo =  " +alumnoNuevo);
+		 	}
+		 	
 
 		 
 		 return respuesta;
