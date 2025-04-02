@@ -27,6 +27,7 @@ import org.springframework.web.bind.annotation.RestController;
 import edu.mefpd.academy.model.Alumno;
 import edu.mefpd.academy.service.AlumnoService;
 import io.swagger.v3.oas.annotations.Operation;
+import jakarta.annotation.PostConstruct;
 import jakarta.validation.Valid;
 
 /**
@@ -57,6 +58,15 @@ public class AlumnosController {
 	
 	@Autowired
 	Environment environment;
+	
+	@Value("${mientorno}")
+	String mientorno;
+	
+	@PostConstruct
+	public void postCreacion ()
+	{
+		log.debug("Entorno = " + this.mientorno);
+	}
 
 	@GetMapping("/obtener-alumno-test") //GET http://localhost:8081/alumno/obtener-alumno-test
 	 public Alumno obtenerAlumnoTest ()

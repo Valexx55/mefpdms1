@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Profile;
 import org.springframework.context.support.ReloadableResourceBundleMessageSource;
 
 @SpringBootApplication
@@ -19,13 +20,14 @@ public class MsalumnosprofeApplication {
 	 * Intento fallido de configurar manualemnte la l11n i18n
 	 * @return
 	 */
-	/*@Bean
+	@Bean
+	@Profile({"dev"})
     public MessageSource messageSource() {
         ReloadableResourceBundleMessageSource messageSource = new ReloadableResourceBundleMessageSource();
         messageSource.setBasename("classpath:traduccion");
         messageSource.setDefaultEncoding("UTF-8");
         return messageSource;
-    }*/
+    }
 	
 	
 
