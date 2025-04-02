@@ -7,6 +7,8 @@ import java.util.stream.Collectors;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
@@ -49,8 +51,14 @@ public class AlumnosController {
 
 	@Autowired
 	AlumnoService alumnoService;
+	
+	@Value("${instancia}")
+	String instancia;
+	
+	@Autowired
+	Environment environment;
 
-	@GetMapping("obtener-alumno-test") //GET http://localhost:8081/alumno/obtener-alumno-test
+	@GetMapping("/obtener-alumno-test") //GET http://localhost:8081/alumno/obtener-alumno-test
 	 public Alumno obtenerAlumnoTest ()
 	 {
 		 Alumno a = null;
@@ -60,11 +68,11 @@ public class AlumnosController {
 		 	log.debug("ALUMNO log debug  = " +a);//TODO configurar el log
 		 	
 		 	//IndexOutBoundsException
-		 	char i = a.getNombre().charAt(4);
+		 	//char i = a.getNombre().charAt(4);
 		 	
 		 	//provocamos una null pointer exception
-		 	Alumno b = null;
-		 	b.getApellido();
+		 	//Alumno b = null;
+		 	//b.getApellido();
 		 
 		 return a;
 	 }
@@ -93,6 +101,7 @@ public class AlumnosController {
 		 Optional<Alumno> oa = Optional.empty();
 		 	
 		 	log.info("En consultar por ID ");
+		 	log.info("Está siendo atentido por " + this.instancia + " - " + environment.getProperty("local.server.port"));
 		 	oa = this.alumnoService.leerPorId(id);
 		 	if (oa.isPresent())
 		 	{
