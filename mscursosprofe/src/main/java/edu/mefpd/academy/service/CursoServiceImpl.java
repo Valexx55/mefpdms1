@@ -59,14 +59,32 @@ public class CursoServiceImpl implements CursoService {
 
 	@Override
 	public Optional<Curso> asignarAlumnos(List<Alumno> lalumnos, Long idcurso) {
-		// TODO Auto-generated method stub
-		return Optional.empty();
+		Optional<Curso> oc = Optional.empty();
+			
+			oc =  this.cursoRepository.findById(idcurso);
+			if (oc.isPresent())
+			{
+				Curso cursoleido = oc.get();
+				lalumnos.forEach(alumno -> cursoleido.addAlumno(alumno));
+				oc = Optional.of(cursoleido);
+			}
+		
+		return oc;
 	}
 
 	@Override
 	public Optional<Curso> eliminarAlumno(Alumno a, Long idcurso) {
-		// TODO Auto-generated method stub
-		return Optional.empty();
+		Optional<Curso> oc = Optional.empty();
+		
+		oc =  this.cursoRepository.findById(idcurso);
+		if (oc.isPresent())
+		{
+			Curso cursoleido = oc.get();
+			cursoleido.deleteAlumno(a);
+			oc = Optional.of(cursoleido);
+		}
+	
+	return oc;
 	}
 
 }

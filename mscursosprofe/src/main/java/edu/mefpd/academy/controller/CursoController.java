@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import edu.mefpd.academy.entity.Alumno;
 import edu.mefpd.academy.entity.Curso;
 import edu.mefpd.academy.service.CursoService;
 
@@ -133,6 +134,65 @@ public class CursoController {
 		 
 		 return respuesta;
 	 }
+	
+	
+	@PutMapping("/add-alumnos/{id}") //PUT http://localhost:8081/curso/add-alumnos/1
+	 public ResponseEntity<Curso> modificarCursoAddAlumnos (@RequestBody List<Alumno> alumnos, @PathVariable Long id)
+	 {
+		 ResponseEntity<Curso> respuesta = null;
+		 Optional<Curso> oa = Optional.empty();
+		 Curso cursoModificado = null;
+		 	
+		 	log.info("En modificarCurso add alumnos ");
+		 	oa = this.cursoService.asignarAlumnos(alumnos, id);
+		 	if (oa.isPresent())
+		 	{
+		 		
+		 		cursoModificado = oa.get();
+		 		respuesta = ResponseEntity.status(HttpStatus.OK).body(cursoModificado);
+		 		
+		 		log.info("cursoModificado  " + cursoModificado);
+		 	} else {
+		 		respuesta = ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+		 		log.info("Curso No encotnrado");
+		 	}
+		 	
+
+		 
+		 return respuesta;
+	 }
+	
+	
+	@PutMapping("/baja-alumno/{id}") //PUT http://localhost:8081/curso/baja-alumno/1
+	 public ResponseEntity<Curso> modificarCursoEliminarAlumno (@RequestBody Alumno alumno, @PathVariable Long id)
+	 {
+		 ResponseEntity<Curso> respuesta = null;
+		 Optional<Curso> oa = Optional.empty();
+		 Curso cursoModificado = null;
+		 	
+		 	log.info("En modificarCurso eliminar alumno");
+		 	oa = this.cursoService.eliminarAlumno(alumno, id);
+		 	if (oa.isPresent())
+		 	{
+		 		
+		 		cursoModificado = oa.get();
+		 		respuesta = ResponseEntity.status(HttpStatus.OK).body(cursoModificado);
+		 		
+		 		log.info("cursoModificado  " + cursoModificado);
+		 	} else {
+		 		respuesta = ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+		 		log.info("Curso No encotnrado");
+		 	}
+		 	
+
+		 
+		 return respuesta;
+	 }
+	
+	
+	
+	
+	
 	
 
 }
