@@ -26,6 +26,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import edu.mefpd.academy.model.Alumno;
 import edu.mefpd.academy.service.AlumnoService;
+import edu.mefpd.academy.service.ElTiempoService;
 import io.swagger.v3.oas.annotations.Operation;
 import jakarta.annotation.PostConstruct;
 import jakarta.validation.Valid;
@@ -53,6 +54,9 @@ public class AlumnosController {
 	@Autowired
 	AlumnoService alumnoService;
 	
+	@Autowired
+	ElTiempoService elTiempoService;
+	
 	@Value("${instancia}")
 	String instancia;
 	
@@ -62,10 +66,25 @@ public class AlumnosController {
 	@Value("${mientorno}")
 	String mientorno;
 	
+	
+	
 	@PostConstruct
 	public void postCreacion ()
 	{
 		log.debug("Entorno = " + this.mientorno);
+	}
+	
+	@GetMapping("/obtener-tiempo-aemet/{idmunicipio}")
+	public ResponseEntity<?> obtenerTiempoViaAemet (@PathVariable String idmunicipio)
+	{
+		ResponseEntity<?> responseEntity = null;
+		String resp = null;
+		
+			resp = this.elTiempoService.obtenerPrediccionEspecificaPorMunicipio(idmunicipio);
+			responseEntity = ResponseEntity.ok(resp);
+		
+		return responseEntity;
+		
 	}
 
 	@GetMapping("/obtener-alumno-test") //GET http://localhost:8081/alumno/obtener-alumno-test
