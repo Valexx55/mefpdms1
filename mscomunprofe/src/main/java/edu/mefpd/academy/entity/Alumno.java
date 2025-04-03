@@ -120,6 +120,21 @@ public class Alumno {
 				+ apellido + ", creadoEn=" + creadoEn + "]";
 	}
 	
+	@Override
+	public boolean equals(Object obj) {
+		boolean iguales = false;
+		
+			if (this == obj)
+			{
+				iguales = true;
+			} else if (obj instanceof Alumno a)
+			{
+				iguales = (a.id == this.id);
+			}
+			
+		
+		return iguales;
+	}
 	
 
 }

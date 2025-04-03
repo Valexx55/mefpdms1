@@ -1,5 +1,6 @@
 package edu.mefpd.academy.service;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.BeanUtils;
@@ -7,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import edu.mefpd.academy.entity.Alumno;
 import edu.mefpd.academy.entity.Curso;
 import edu.mefpd.academy.repository.CursoRepository;
 
@@ -53,6 +55,18 @@ public class CursoServiceImpl implements CursoService {
 	public Iterable<Curso> leerTodos() {
 		
 		return this.cursoRepository.findAll();
+	}
+
+	@Override
+	public Optional<Curso> asignarAlumnos(List<Alumno> lalumnos, Long idcurso) {
+		// TODO Auto-generated method stub
+		return Optional.empty();
+	}
+
+	@Override
+	public Optional<Curso> eliminarAlumno(Alumno a, Long idcurso) {
+		// TODO Auto-generated method stub
+		return Optional.empty();
 	}
 
 }
