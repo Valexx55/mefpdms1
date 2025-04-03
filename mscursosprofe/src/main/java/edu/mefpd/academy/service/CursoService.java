@@ -2,7 +2,7 @@ package edu.mefpd.academy.service;
 
 import java.util.Optional;
 
-import edu.mefpd.academy.model.Curso;
+import edu.mefpd.academy.entity.Curso;
 
 
 public interface CursoService {

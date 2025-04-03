@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import edu.mefpd.academy.model.Alumno;
+import edu.mefpd.academy.entity.Alumno;
 import edu.mefpd.academy.repository.AlumnoRepository;
 
 
@@ -37,6 +37,7 @@ public class AlumnoServiceImp implements AlumnoService {
 	}
 
 	@Override
+	@Transactional
 	public void bajaPorId(Long id) {
 		this.alumnoRepository.deleteById(id);
 		

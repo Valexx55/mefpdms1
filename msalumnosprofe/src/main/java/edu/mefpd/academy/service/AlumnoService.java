@@ -2,7 +2,7 @@ package edu.mefpd.academy.service;
 
 import java.util.Optional;
 
-import edu.mefpd.academy.model.Alumno;
+import edu.mefpd.academy.entity.Alumno;
 
 /**
  * Aquí, defino cuál es la operativa de mi aplicación

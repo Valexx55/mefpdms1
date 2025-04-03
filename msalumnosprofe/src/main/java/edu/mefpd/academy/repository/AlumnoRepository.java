@@ -4,7 +4,7 @@ import org.springframework.boot.context.properties.source.IterableConfigurationP
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import edu.mefpd.academy.model.Alumno;
+import edu.mefpd.academy.entity.Alumno;
 
 /**
  * En esta interfaz, se encapsula la interacción con la base de datos

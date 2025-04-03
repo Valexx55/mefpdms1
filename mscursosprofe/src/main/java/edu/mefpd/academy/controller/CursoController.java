@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import edu.mefpd.academy.model.Curso;
+import edu.mefpd.academy.entity.Curso;
 import edu.mefpd.academy.service.CursoService;
 
 @RestController
