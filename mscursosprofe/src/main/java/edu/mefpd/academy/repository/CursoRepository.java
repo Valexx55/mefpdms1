@@ -10,9 +10,9 @@ import edu.mefpd.academy.entity.Curso;
 public interface CursoRepository extends CrudRepository<Curso, Long> {
 	
 	//TODO Para mañana viernes
-	//completamos este nuevo servicio
-	//com interna microservicios de una misma nube OpenFeign
-	//Test
+	//completamos este nuevo servicio x 
+	//com interna microservicios de una misma nube OpenFeign x
+	//Test x
 	//Seguridad
 	//Paginación
 	//foto
