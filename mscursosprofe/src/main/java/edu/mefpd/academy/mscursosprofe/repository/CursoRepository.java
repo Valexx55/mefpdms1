@@ -15,7 +15,8 @@ public interface CursoRepository extends CrudRepository<Curso, Long> {
 	//Test x
 	//Seguridad
 	//Paginación
-	//foto
+	//fotos
+	//Cors filtro
 	
 	//una consulta nativa
 	//dado un id de alumno, que nos diga en qué curso está (si está en alguno)
