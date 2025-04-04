@@ -22,5 +22,7 @@ public Curso alta (Curso curso);
 	public Optional<Curso>  asignarAlumnos (List<Alumno> lalumnos, Long idcurso);
 	
 	public Optional<Curso> eliminarAlumno (Alumno a, Long idcurso);
+	
+	public Optional<Curso> obtenerCursoAlumno (Long idalumno);
 
 }

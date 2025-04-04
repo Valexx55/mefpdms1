@@ -190,7 +190,28 @@ public class CursoController {
 	 }
 	
 	
-	
+	@GetMapping("/obtener-curso-alumno/{idalumno}") //GET http://localhost:8081/curso/1
+	 public ResponseEntity<Curso> obtenerCursoAlumno (@PathVariable Long idalumno)
+	 {
+		 ResponseEntity<Curso> respuesta = null;
+		 Curso cursoLeido = null;
+		 Optional<Curso> oa = Optional.empty();
+		 	
+		 	log.info("En obtener-curso-alumno ");
+		 	oa = this.cursoService.obtenerCursoAlumno(idalumno);
+		 	if (oa.isPresent())
+		 	{
+		 		cursoLeido = oa.get();
+		 		respuesta = ResponseEntity.ok(cursoLeido);
+		 		log.info("Curso encontrado con id " + idalumno + " " + cursoLeido);
+		 	} else {
+		 		log.info("Curso NO encontrado con id " + idalumno);
+		 		respuesta = ResponseEntity.noContent().build();
+		 	}
+
+		 
+		 return respuesta;
+	 }
 	
 	
 	
