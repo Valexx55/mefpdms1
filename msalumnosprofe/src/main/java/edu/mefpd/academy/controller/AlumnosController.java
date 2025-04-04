@@ -24,7 +24,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import edu.mefpd.academy.ClienteFeignCurso;
 import edu.mefpd.academy.entity.Alumno;
+import edu.mefpd.academy.entity.Curso;
 import edu.mefpd.academy.service.AlumnoService;
 import edu.mefpd.academy.service.ElTiempoService;
 import io.swagger.v3.oas.annotations.Operation;
@@ -56,6 +58,9 @@ public class AlumnosController {
 	
 	@Autowired
 	ElTiempoService elTiempoService;
+	
+	@Autowired
+	ClienteFeignCurso clienteFeignCurso;
 	
 	@Value("${instancia}")
 	String instancia;
@@ -243,5 +248,38 @@ public class AlumnosController {
 		 
 		 return respuesta;
 	 }
+	
+	
+	@GetMapping("/obtener-curso-alumno-via-feign/{idalumno}") //GET 
+	 public ResponseEntity<Curso> obtenerCursoAlumnoViaFeign (@PathVariable Long idalumno)
+	 {
+		 ResponseEntity<Curso> respuesta = null;
+		 Curso cursoLeido = null;
+		 Optional<Curso> oa = Optional.empty();
+		 	
+		 	log.info("En obtenerCursoAlumnoViaFeign ");
+		 	oa = this.clienteFeignCurso.obtenerCursoAlumno(idalumno);
+		 	if (oa.isPresent())
+		 	{
+		 		cursoLeido = oa.get();
+		 		respuesta = ResponseEntity.ok(cursoLeido);
+		 		log.info("Alumno con curso " + cursoLeido);
+		 	} else {
+		 		log.info("Alumno sin curso " );
+		 		respuesta = ResponseEntity.noContent().build();
+		 	}
+
+		 
+		 return respuesta;
+	 }
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 }
