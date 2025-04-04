@@ -3893,3 +3893,80 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springfra
 2025-04-04 11:49:57,788 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
 2025-04-04 11:49:57,788 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
 2025-04-04 11:49:57,803 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/usuario/Documents/workspace-spring-tool-suite-4-4.16.1.RELEASE/msalumnosprofe/src/test/resources
+2025-04-04 11:51:44,367 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2025-04-04 11:51:44,367 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2025-04-04 11:51:44,384 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/usuario/Documents/workspace-spring-tool-suite-4-4.16.1.RELEASE/msalumnosprofe/src/test/resources
+2025-04-04 11:51:54,162 [Worker-20: Launching AlumnosControllerTest3] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/mscomunprofe: edu.mefpd.academy:mscomunprofe:0.0.1-SNAPSHOT with classifier null to /mscomunprofe/target/classes
+2025-04-04 11:51:54,309 [Worker-20: Launching AlumnosControllerTest3] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/mscomunprofe: edu.mefpd.academy:mscomunprofe:0.0.1-SNAPSHOT with classifier null to /mscomunprofe/target/classes
+2025-04-04 11:53:49,987 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2025-04-04 11:53:49,987 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2025-04-04 11:53:50,002 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/usuario/Documents/workspace-spring-tool-suite-4-4.16.1.RELEASE/msalumnosprofe/src/test/resources
+2025-04-04 11:57:45,147 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src/main/resources to target/classes
+2025-04-04 11:57:45,218 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 5 resources from src/main/resources to target/classes
+2025-04-04 11:57:45,245 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/usuario/Documents/workspace-spring-tool-suite-4-4.16.1.RELEASE/msalumnosprofe/src/test/resources
+2025-04-04 11:58:45,376 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2025-04-04 11:58:45,417 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2025-04-04 11:58:45,436 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/usuario/Documents/workspace-spring-tool-suite-4-4.16.1.RELEASE/mscomunprofe/src/test/resources
+2025-04-04 11:58:46,150 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src/main/resources to target/classes
+2025-04-04 11:58:46,235 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 5 resources from src/main/resources to target/classes
+2025-04-04 11:58:46,237 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/usuario/Documents/workspace-spring-tool-suite-4-4.16.1.RELEASE/msalumnosprofe/src/test/resources
+2025-04-04 11:58:46,371 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2025-04-04 11:58:46,388 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2025-04-04 11:58:46,401 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/usuario/Documents/workspace-spring-tool-suite-4-4.16.1.RELEASE/mscursosprofe/src/test/resources
+2025-04-04 11:59:23,312 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2025-04-04 11:59:23,336 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2025-04-04 11:59:23,563 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/usuario/Documents/workspace-spring-tool-suite-4-4.16.1.RELEASE/mscursosprofe/src/test/resources
+2025-04-04 12:00:12,807 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2025-04-04 12:00:12,840 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2025-04-04 12:00:12,844 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/usuario/Documents/workspace-spring-tool-suite-4-4.16.1.RELEASE/mseurekaprofe/src/test/resources
+2025-04-04 12:00:46,474 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2025-04-04 12:00:46,509 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2025-04-04 12:00:46,529 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/usuario/Documents/workspace-spring-tool-suite-4-4.16.1.RELEASE/msgatewayprofe/src/test/resources
+2025-04-04 12:01:14,490 [Worker-8: Launching AlumnosControllerTest3 (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/mscomunprofe: edu.mefpd.academy:mscomunprofe:0.0.1-SNAPSHOT with classifier null to /mscomunprofe/target/classes
+2025-04-04 12:01:14,691 [Worker-8: Launching AlumnosControllerTest3 (1)] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/mscomunprofe: edu.mefpd.academy:mscomunprofe:0.0.1-SNAPSHOT with classifier null to /mscomunprofe/target/classes
+2025-04-04 12:01:53,197 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2025-04-04 12:01:53,197 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2025-04-04 12:01:53,199 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/usuario/Documents/workspace-spring-tool-suite-4-4.16.1.RELEASE/msalumnosprofe/src/test/resources
+2025-04-04 12:03:22,915 [Worker-16: Launching AlumnosControllerTest desactivado eureka] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/mscomunprofe: edu.mefpd.academy:mscomunprofe:0.0.1-SNAPSHOT with classifier null to /mscomunprofe/target/classes
+2025-04-04 12:03:23,041 [Worker-16: Launching AlumnosControllerTest desactivado eureka] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/mscomunprofe: edu.mefpd.academy:mscomunprofe:0.0.1-SNAPSHOT with classifier null to /mscomunprofe/target/classes
+2025-04-04 12:04:39,255 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src/main/resources to target/classes
+2025-04-04 12:04:39,346 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 5 resources from src/main/resources to target/classes
+2025-04-04 12:04:39,352 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/usuario/Documents/workspace-spring-tool-suite-4-4.16.1.RELEASE/msalumnosprofe/src/test/resources
+2025-04-04 12:05:18,466 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2025-04-04 12:05:18,482 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2025-04-04 12:05:18,491 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/usuario/Documents/workspace-spring-tool-suite-4-4.16.1.RELEASE/mscursosprofe/src/test/resources
+2025-04-04 12:05:50,771 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2025-04-04 12:05:50,771 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2025-04-04 12:05:50,793 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/usuario/Documents/workspace-spring-tool-suite-4-4.16.1.RELEASE/msalumnosprofe/src/test/resources
+2025-04-04 12:06:03,732 [Worker-11: Launching AlumnosControllerTest desactivado eureka] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/mscomunprofe: edu.mefpd.academy:mscomunprofe:0.0.1-SNAPSHOT with classifier null to /mscomunprofe/target/classes
+2025-04-04 12:06:03,893 [Worker-11: Launching AlumnosControllerTest desactivado eureka] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/mscomunprofe: edu.mefpd.academy:mscomunprofe:0.0.1-SNAPSHOT with classifier null to /mscomunprofe/target/classes
+2025-04-04 12:06:52,937 [Worker-11: Launching AlumnosControllerTest3] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/mscomunprofe: edu.mefpd.academy:mscomunprofe:0.0.1-SNAPSHOT with classifier null to /mscomunprofe/target/classes
+2025-04-04 12:06:53,051 [Worker-11: Launching AlumnosControllerTest3] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/mscomunprofe: edu.mefpd.academy:mscomunprofe:0.0.1-SNAPSHOT with classifier null to /mscomunprofe/target/classes
+2025-04-04 12:08:11,709 [Worker-8: Launching AlumnosControllerTest3] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/mscomunprofe: edu.mefpd.academy:mscomunprofe:0.0.1-SNAPSHOT with classifier null to /mscomunprofe/target/classes
+2025-04-04 12:08:11,893 [Worker-8: Launching AlumnosControllerTest3] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/mscomunprofe: edu.mefpd.academy:mscomunprofe:0.0.1-SNAPSHOT with classifier null to /mscomunprofe/target/classes
+2025-04-04 12:11:29,572 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2025-04-04 12:11:29,573 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2025-04-04 12:11:29,580 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/usuario/Documents/workspace-spring-tool-suite-4-4.16.1.RELEASE/msalumnosprofe/src/test/resources
+2025-04-04 12:12:06,375 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2025-04-04 12:12:06,385 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2025-04-04 12:12:06,403 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/usuario/Documents/workspace-spring-tool-suite-4-4.16.1.RELEASE/msalumnosprofe/src/test/resources
+2025-04-04 12:12:38,283 [Worker-13: Launching AlumnosControllerTest2] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/mscomunprofe: edu.mefpd.academy:mscomunprofe:0.0.1-SNAPSHOT with classifier null to /mscomunprofe/target/classes
+2025-04-04 12:12:38,443 [Worker-13: Launching AlumnosControllerTest2] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/mscomunprofe: edu.mefpd.academy:mscomunprofe:0.0.1-SNAPSHOT with classifier null to /mscomunprofe/target/classes
+2025-04-04 12:16:22,164 [Worker-7: Launching AlumnosControllerTest3] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/mscomunprofe: edu.mefpd.academy:mscomunprofe:0.0.1-SNAPSHOT with classifier null to /mscomunprofe/target/classes
+2025-04-04 12:16:22,438 [Worker-7: Launching AlumnosControllerTest3] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/mscomunprofe: edu.mefpd.academy:mscomunprofe:0.0.1-SNAPSHOT with classifier null to /mscomunprofe/target/classes
+2025-04-04 12:17:55,349 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2025-04-04 12:17:55,350 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2025-04-04 12:17:55,370 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/usuario/Documents/workspace-spring-tool-suite-4-4.16.1.RELEASE/msalumnosprofe/src/test/resources
+2025-04-04 12:18:26,512 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src/main/resources to target/classes
+2025-04-04 12:18:26,682 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 5 resources from src/main/resources to target/classes
+2025-04-04 12:18:26,711 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/usuario/Documents/workspace-spring-tool-suite-4-4.16.1.RELEASE/msalumnosprofe/src/test/resources
+2025-04-04 12:18:45,214 [Worker-10: Launching Rerun AlumnosControllerTest3] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/mscomunprofe: edu.mefpd.academy:mscomunprofe:0.0.1-SNAPSHOT with classifier null to /mscomunprofe/target/classes
+2025-04-04 12:18:45,360 [Worker-10: Launching Rerun AlumnosControllerTest3] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/mscomunprofe: edu.mefpd.academy:mscomunprofe:0.0.1-SNAPSHOT with classifier null to /mscomunprofe/target/classes
+2025-04-04 12:19:50,735 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2025-04-04 12:19:50,736 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2025-04-04 12:19:50,761 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/usuario/Documents/workspace-spring-tool-suite-4-4.16.1.RELEASE/msalumnosprofe/src/test/resources
+2025-04-04 12:20:06,045 [Worker-20: Launching Rerun AlumnosControllerTest3] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/mscomunprofe: edu.mefpd.academy:mscomunprofe:0.0.1-SNAPSHOT with classifier null to /mscomunprofe/target/classes
+2025-04-04 12:20:06,222 [Worker-20: Launching Rerun AlumnosControllerTest3] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/mscomunprofe: edu.mefpd.academy:mscomunprofe:0.0.1-SNAPSHOT with classifier null to /mscomunprofe/target/classes
+2025-04-04 12:21:14,968 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2025-04-04 12:21:14,984 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2025-04-04 12:21:14,988 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/usuario/Documents/workspace-spring-tool-suite-4-4.16.1.RELEASE/msalumnosprofe/src/test/resources
