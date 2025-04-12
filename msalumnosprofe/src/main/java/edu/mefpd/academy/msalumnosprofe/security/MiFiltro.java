@@ -25,12 +25,12 @@ public class MiFiltro implements Filter {
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 			throws IOException, ServletException {
 		System.out.println("HOLA PASA POR AQUï A LA ida");
-		HttpServletRequest hr = (HttpServletRequest)request;
+		/*HttpServletRequest hr = (HttpServletRequest)request;
 		String cadauth = hr.getHeader("Authorization");
 		System.out.println("TOKEN BASIC "+  cadauth);
 		byte[] credenciales = Base64.getDecoder().decode(cadauth.substring(6));
 		String caddesc = new String(credenciales, StandardCharsets.UTF_8);
-		System.out.println(caddesc);
+		System.out.println(caddesc);*/
 		
 		chain.doFilter(request, response);
 		System.out.println("HOLA PASA POR AQUï A LA VUELTA");

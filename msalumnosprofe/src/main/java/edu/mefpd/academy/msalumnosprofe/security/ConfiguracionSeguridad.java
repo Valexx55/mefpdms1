@@ -52,13 +52,16 @@ public class ConfiguracionSeguridad {
 						   		.authorizeHttpRequests(auth -> 
 						   				auth.requestMatchers(HttpMethod.POST).hasAnyRole("ADMIN")
 						   				.requestMatchers("/alumno/**").authenticated())
+						   				//.requestMatchers("/swagger-ui/**").anonymous()
+						   				//.requestMatchers("/v3/api-docs*/**").anonymous()
+						   				//.requestMatchers("/swagger-ui.html").anonymous())
 						   		.httpBasic(Customizer.withDefaults()).build();
 	}
 	
 	@Bean
 	public WebSecurityCustomizer seguridadWeb ()
 	{
-		return web -> web.ignoring().requestMatchers("/swagger-ui/index.html");
+		return web -> web.ignoring().requestMatchers("/swagger-ui/**", "/v3/api-docs*/**", "/swagger-ui.html");
 	}
 	
 	
