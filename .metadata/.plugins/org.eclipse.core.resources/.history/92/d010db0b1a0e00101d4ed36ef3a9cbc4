@@ -1,5 +1,0 @@
-package edu.mefpd.academy.repository;
-
-public interface AlumnoRepository {
-
-}
