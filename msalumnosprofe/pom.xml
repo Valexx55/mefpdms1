@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>edu.mefpd.academy</groupId>
 	<artifactId>msalumnosprofe</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.11</version>
 	<name>msalumnosprofe</name>
 	<description>MicroServicio para la gestión de Alumnos</description>
 	<url />
@@ -113,4 +113,20 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
+	<!--<repositories>
+		<repository>
+			<id>minexus</id>
+			<url>http://localhost:8081/repository/maven-public</url>
+		</repository>
+	</repositories>-->
+	<distributionManagement>
+		<repository>
+			<id>minexus</id>
+			<url>http://localhost:8081/repository/maven-releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>minexus</id>
+			<url>http://localhost:8081/repository/maven-snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
 </project>
