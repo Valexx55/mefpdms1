@@ -13,7 +13,7 @@ import edu.mefpd.academy.mscomunprofe.entity.Curso;
  * @author usuario
  *
  */
-@FeignClient(name = "mscursosprofe")//indicamos el nombre del microservicio que somos clientes
+@FeignClient(name = "mscursosprofe")//indicamos el nombre del microservicio que somos clientes - prueba
 public interface ClienteFeignCurso {
 	
 	@GetMapping("/curso/obtener-curso-alumno/{idalumno}")
