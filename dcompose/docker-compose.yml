@@ -1,0 +1,34 @@
+services:
+  eureka:
+    build: ./eureka
+    ports:
+      - 8761:8761
+  gateway:
+    build: ./gateway
+    ports:
+      - 9090:9090
+    depends_on:
+      - eureka
+    environment:
+      EUREKA_HOST: 172.17.0.1
+  alumnos:
+    build: ./alumnos
+    ports:
+      - 8082:8082
+    depends_on:
+      - eureka
+    environment:
+      DB_HOST: 172.17.0.1
+      EUREKA_HOST: 172.17.0.1
+  cursos:
+    build: ./cursos
+    ports:
+      - 8085:8085
+    depends_on:
+      - eureka
+      - alumnos
+    environment:
+      DB_HOST: 172.17.0.1
+      EUREKA_HOST: 172.17.0.1
+      IP_CURSOS: 172.17.0.1
+
