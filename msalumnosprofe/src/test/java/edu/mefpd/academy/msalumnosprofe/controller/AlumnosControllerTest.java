@@ -15,6 +15,7 @@ import org.springframework.boot.test.web.server.LocalServerPort;
 import edu.mefpd.academy.msalumnosprofe.MsalumnosprofeApplication;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatIllegalStateException;
 
 //@RunWith(SpringRunner.class)
 //@SpringBootTest(classes = {MsalumnosprofeApplication.class}, webEnvironment = WebEnvironment.RANDOM_PORT)
@@ -56,6 +57,8 @@ public class AlumnosControllerTest {
 	
 	@Test
 	void test() {
+		//add autenticación
+		this.template = this.template.withBasicAuth("admin", "admin");
 		assertThat(this.template.getForObject("http://localhost:"+port+"/alumno", String.class)).contains("apellido");
 	}
 

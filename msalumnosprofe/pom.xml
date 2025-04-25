@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>edu.mefpd.academy</groupId>
 	<artifactId>msalumnosprofe</artifactId>
-	<version>0.0.3</version>
+	<version>0.0.3-SNAPSHOT</version>
 	<name>msalumnosprofe</name>
 	<description>MicroServicio para la gestión de Alumnos</description>
 	<url />

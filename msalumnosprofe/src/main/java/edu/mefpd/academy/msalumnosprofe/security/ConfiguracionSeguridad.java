@@ -51,8 +51,8 @@ public class ConfiguracionSeguridad {
 		return httpSecurity.csrf(c -> c.disable())
 						   		.authorizeHttpRequests(auth -> 
 						   				auth.requestMatchers(HttpMethod.POST).hasAnyRole("ADMIN")
-						   				//.requestMatchers("/alumno/**").authenticated())
-						   			    .requestMatchers("/alumno/**").anonymous())
+						   				.requestMatchers("/alumno/**").authenticated())
+						   			    //.requestMatchers("/alumno/**").anonymous())
 						   				//.requestMatchers("/swagger-ui/**").anonymous()
 						   				//.requestMatchers("/v3/api-docs*/**").anonymous()
 						   				//.requestMatchers("/swagger-ui.html").anonymous())
